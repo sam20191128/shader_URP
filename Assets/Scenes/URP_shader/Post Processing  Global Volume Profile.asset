@@ -726,7 +726,7 @@ MonoBehaviour:
   m_AdvancedMode: 0
   Size:
     m_OverrideState: 1
-    m_Value: 3
+    m_Value: 32.2
     min: 0
     max: 100
   T:
@@ -755,7 +755,7 @@ MonoBehaviour:
   m_AdvancedMode: 0
   blurRadius:
     m_OverrideState: 1
-    m_Value: 0.00082
+    m_Value: 0.00308
     min: 0
     max: 0.01
   iterations:
