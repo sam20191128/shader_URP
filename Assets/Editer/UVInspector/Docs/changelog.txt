@@ -1,0 +1,12 @@
+
+Version 2.2
+ * Added ability to save an image of the UV layout
+ * Added ability to inspect uv values
+
+Version 1.1
+ * Bug fixes
+ * UI improvements
+
+Version 1.0
+ * Initial release
+

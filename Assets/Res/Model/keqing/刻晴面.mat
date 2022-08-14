@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: "\u523B\u6674\u9762"
+  m_Shader: {fileID: 4800000, guid: d82f279c17215ba4ab87321e8fcfb470, type: 3}
+  m_ValidKeywords:
+  - _SHADERENUM_BASE
+  m_InvalidKeywords:
+  - ENABLE_FACE_SHADOW_MAP
+  - ENABLE_Flip_UV
+  - ENABLE_RAMP_SHADOW
+  - _ENABLELAMBERT_ON
+  - _ENABLERIMDS_ON
+  - _ENABLERIM_ON
+  - _FIXDARKSHADOW_ON
+  - _IGNORELIGHTY_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: 916daf96c7a8f654b9662c0cce8b5af9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FaceShadowMap:
+        m_Texture: {fileID: 2800000, guid: e07247e45e11c7544a00b79b7cd5b0a4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _LightMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 916daf96c7a8f654b9662c0cce8b5af9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Matcap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParamTex:
+        m_Texture: {fileID: 2800000, guid: e07247e45e11c7544a00b79b7cd5b0a4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RampMap:
+        m_Texture: {fileID: 2800000, guid: c9f86ac730e3b5b48806d5cc5837113d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _DarkShadowArea: 0.5
+    - _DarkShadowSmooth: 0.05
+    - _DarkSideRimPow: 10
+    - _DarkSideRimSmooth: 0.001
+    - _ENABLE_Flip_UV: 1
+    - _EmissionIntensity: 0
+    - _EnableFaceShadowMap: 1
+    - _EnableLambert: 1
+    - _EnableRampShadow: 1
+    - _EnableRim: 1
+    - _EnableRimDS: 1
+    - _EnableSpecular: 0
+    - _FaceShadowMapPow: 12.85
+    - _FaceShadowOffset: 1
+    - _FaceShadowRangeSmooth: 0.403
+    - _FixDarkShadow: 1
+    - _FixLightY: 0
+    - _FlipUV: 0
+    - _HairSpecularIntensity: 0.5
+    - _HairSpecularRange: 0.5
+    - _HairSpecularViewRange: 0.5
+    - _IgnoreLightY: 1
+    - _InNight: 0
+    - _Night: 1
+    - _RampMapYRange: 0.5
+    - _RampShadowRange: 1
+    - _RimIntensity: 0
+    - _RimPow: 10
+    - _RimRadius: 0.1
+    - _RimSmooth: 0.011
+    - _ShaderEnum: 1
+    - _ShadowArea: 0.673
+    - _ShadowSmooth: 0.05
+    - _Shininess: 5.4
+    - _SpecMulti: 0.207
+    - _WorldLightInfluence: 0.282
+    - _outlinewidth: 0.03
+    m_Colors:
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _DarkShadowMultColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _DarkSideRimColor: {r: 0.4627451, g: 0.4627451, b: 0.4627451, a: 1}
+    - _HairSpecColor: {r: 1, g: 1, b: 1, a: 1}
+    - _LightSpecColor: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
+    - _MainColor: {r: 1, g: 1, b: 1, a: 1}
+    - _MetalColor: {r: 1, g: 1, b: 1, a: 1}
+    - _RampArea12: {r: -50, g: 1, b: -50, a: 4}
+    - _RampArea34: {r: -50, g: 0, b: -50, a: 2}
+    - _RampArea5: {r: -50, g: 3, b: -50, a: 0}
+    - _RimColor: {r: 0.46226418, g: 0.46226418, b: 0.46226418, a: 1}
+    - _ShadowMultColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _outlinecolor: {r: 0.5471698, g: 0.5471698, b: 0.5471698, a: 1}
+  m_BuildTextureStacks: []
