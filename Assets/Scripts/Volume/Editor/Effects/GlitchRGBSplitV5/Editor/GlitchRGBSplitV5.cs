@@ -1,10 +1,6 @@
-using System.Collections.Concurrent;
 using UnityEngine;
 using UnityEngine.Rendering;
-using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.Rendering.Universal;
-using FloatParameter = UnityEngine.Rendering.PostProcessing.FloatParameter;
-
 
 [VolumeComponentMenu(VolumeDefine.Glitch + "RGB颜色分离V5 (RGB SplitV5)")]
 public class GlitchRGBSplitV5 : CustomVolumeComponent

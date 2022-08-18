@@ -1,12 +1,6 @@
-using System.Collections.Concurrent;
 using UnityEngine;
 using UnityEngine.Rendering;
-using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.Rendering.Universal;
-using BoolParameter = UnityEngine.Rendering.BoolParameter;
-using FloatParameter = UnityEngine.Rendering.PostProcessing.FloatParameter;
-using Vector2Parameter = UnityEngine.Rendering.Vector2Parameter;
-
 
 [VolumeComponentMenu(VolumeDefine.Glitch + "波形抖动故障 (Wave Jitter Glitch)")]
 public class GlitchWaveJitter : CustomVolumeComponent

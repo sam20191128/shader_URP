@@ -1,11 +1,6 @@
-using System.Collections.Concurrent;
 using UnityEngine;
 using UnityEngine.Rendering;
-using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.Rendering.Universal;
-using BoolParameter = UnityEngine.Rendering.BoolParameter;
-using FloatParameter = UnityEngine.Rendering.PostProcessing.FloatParameter;
-
 
 [VolumeComponentMenu(VolumeDefine.Glitch + "错位图块故障 (ImageBlock)")]
 public class GlitchImageBlock : CustomVolumeComponent

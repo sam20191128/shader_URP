@@ -1,10 +1,6 @@
-using System.Collections.Concurrent;
 using UnityEngine;
 using UnityEngine.Rendering;
-using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.Rendering.Universal;
-using FloatParameter = UnityEngine.Rendering.PostProcessing.FloatParameter;
-
 
 [VolumeComponentMenu(VolumeDefine.Glitch + "RGB颜色分离V3多级sin延迟跟随 (RGB SplitV3)")]
 public class GlitchRGBSplitV3 : CustomVolumeComponent

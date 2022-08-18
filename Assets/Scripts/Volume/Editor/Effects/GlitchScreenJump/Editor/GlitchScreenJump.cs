@@ -1,11 +1,6 @@
-using System.Collections.Concurrent;
 using UnityEngine;
 using UnityEngine.Rendering;
-using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.Rendering.Universal;
-using BoolParameter = UnityEngine.Rendering.BoolParameter;
-using FloatParameter = UnityEngine.Rendering.PostProcessing.FloatParameter;
-
 
 [VolumeComponentMenu(VolumeDefine.Glitch + "跳屏故障 (Screen Jump)")]
 public class GlitchScreenJump : CustomVolumeComponent

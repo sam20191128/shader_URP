@@ -1,13 +1,6 @@
-using System.Collections.Concurrent;
 using UnityEngine;
 using UnityEngine.Rendering;
-using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.Rendering.Universal;
-using BoolParameter = UnityEngine.Rendering.BoolParameter;
-using ColorParameter = UnityEngine.Rendering.ColorParameter;
-using FloatParameter = UnityEngine.Rendering.PostProcessing.FloatParameter;
-using Vector2Parameter = UnityEngine.Rendering.Vector2Parameter;
-
 
 [VolumeComponentMenu(VolumeDefine.Glitch + "数字条纹故障 (Digital Stripe Glitch)")]
 public class GlitchDigitalStripe : CustomVolumeComponent

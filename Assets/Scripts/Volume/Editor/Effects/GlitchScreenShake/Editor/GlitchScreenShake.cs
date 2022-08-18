@@ -1,11 +1,6 @@
-using System.Collections.Concurrent;
 using UnityEngine;
 using UnityEngine.Rendering;
-using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.Rendering.Universal;
-using BoolParameter = UnityEngine.Rendering.BoolParameter;
-using FloatParameter = UnityEngine.Rendering.PostProcessing.FloatParameter;
-
 
 [VolumeComponentMenu(VolumeDefine.Glitch + "屏幕抖动故障 (Screen Shake)")]
 public class GlitchScreenShake : CustomVolumeComponent
