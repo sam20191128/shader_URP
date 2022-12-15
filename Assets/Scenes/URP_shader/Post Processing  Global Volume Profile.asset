@@ -282,6 +282,7 @@ MonoBehaviour:
   m_Name: Post Processing  Global Volume Profile
   m_EditorClassIdentifier: 
   components:
+  - {fileID: 4927242967155892547}
   - {fileID: 9130450080886625199}
   - {fileID: -4915965394078940534}
   - {fileID: 9026399469725604866}
@@ -575,6 +576,23 @@ MonoBehaviour:
     m_Value: 0.58
     min: 0
     max: 1
+--- !u!114 &4927242967155892547
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c23e3b12dc18c42a140437e53d3951, type: 3}
+  m_Name: Tonemapping
+  m_EditorClassIdentifier: 
+  active: 1
+  m_AdvancedMode: 0
+  mode:
+    m_OverrideState: 1
+    m_Value: 2
 --- !u!114 &5592218610201362797
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -751,11 +769,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e31aedce7c5f3441961db504d2a0410, type: 3}
   m_Name: TiltShiftBlurV2
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   m_AdvancedMode: 0
   blurRadius:
     m_OverrideState: 1
-    m_Value: 0.00308
+    m_Value: 0.00128
     min: 0
     max: 0.01
   iterations:
@@ -829,12 +847,12 @@ MonoBehaviour:
   m_AdvancedMode: 0
   blurSize:
     m_OverrideState: 1
-    m_Value: 0.00284
+    m_Value: 0.00075
     min: 0
     max: 0.01
   iterations:
     m_OverrideState: 1
-    m_Value: 172
+    m_Value: 36
     min: 1
     max: 500
   RTDownSample:

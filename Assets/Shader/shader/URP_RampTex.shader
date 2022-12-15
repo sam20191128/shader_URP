@@ -1,26 +1,17 @@
 Shader "URP/RampTex" //Shader路径名
 {
     Properties
-
     {
-
         _MainTex("RAMP",2D)="White"{}
-
         _BaseColor("BaseColor",Color)=(1,1,1,1)
-
     }
 
     SubShader
-
     {
-
         Tags
         {
-
             "RenderPipeline"="UniversalRenderPipeline"
-
             "RenderType"="Opaque"
-
         }
         pass
         {
@@ -33,9 +24,9 @@ Shader "URP/RampTex" //Shader路径名
             HLSLPROGRAM
             #pragma vertex vert
             #pragma fragment frag
+            #pragma shader_feature _ADD_LIGHT_ON _ADD_LIGHT_OFF
 
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Lighting.hlsl"
-
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
 
             CBUFFER_START(UnityPerMaterial)

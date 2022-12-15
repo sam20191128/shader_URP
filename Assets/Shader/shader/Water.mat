@@ -24,7 +24,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FoamNoiseTex:
-        m_Texture: {fileID: 2800000, guid: bdbe94d7623ec3940947b62544306f1c, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4da2e690869684a468aa0473c54bb0a0, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -59,7 +59,7 @@ Material:
     - _DepthMaxDistance: 1
     - _Depthdarkness: 0.5
     - _EmitInt: 0
-    - _FoamAmount: 0.81
+    - _FoamAmount: 1.06
     - _FresnelPow: 3
     - _Fresnelexponent: 4
     - _Glossiness: 1
@@ -68,7 +68,7 @@ Material:
     - _RimSize: 2
     - _Rimfalloff: 0.25
     - _Rimtiling: 2
-    - _SpecularPow: 90
+    - _SpecularPow: 86.5
     - _Strength: 0.67
     - _SurfaceHighlight: 0.05
     - _SurfaceHightlighttiling: 0.25
@@ -86,7 +86,7 @@ Material:
     - _DepthGradientDeep: {r: 0.12808828, g: 0.26415092, b: 0.23073202, a: 1}
     - _DepthGradientShallow: {r: 0.23549305, g: 0.7924528, b: 0.62264806, a: 1}
     - _EmitCol: {r: 0, g: 1, b: 0.36830664, a: 1}
-    - _FoamCol: {r: 0, g: 1, b: 0.73867464, a: 1}
+    - _FoamCol: {r: 1, g: 1, b: 1, a: 1}
     - _FoamParams: {r: 1, g: 0.2, b: 0.2, a: 1}
     - _FresnelColor: {r: 0.5215451, g: 0.3270737, b: 0.6603774, a: 1}
     - _MainCol: {r: 0.22745098, g: 0.4509804, b: 0.39607844, a: 1}
