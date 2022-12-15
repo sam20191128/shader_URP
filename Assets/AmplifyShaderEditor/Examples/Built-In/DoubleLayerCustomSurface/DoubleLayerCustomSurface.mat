@@ -1,0 +1,268 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: DoubleLayerCustomSurface
+  m_Shader: {fileID: 4800000, guid: 3beb92be39dd4b146a37ed79eba96c07, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 1
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _CarNormalMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _CoatNormal
+      second:
+        m_Texture: {fileID: 2800000, guid: b3d940e75e1f5d24684cd93a2758e1bf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _CoatlNormal
+      second:
+        m_Texture: {fileID: 2800000, guid: b3d940e75e1f5d24684cd93a2758e1bf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _FlakeColorMask
+      second:
+        m_Texture: {fileID: 2800000, guid: 21a6bd9b3f2c90047b38cea2fe37f5bb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _FlakeMask
+      second:
+        m_Texture: {fileID: 2800000, guid: f3337d1b16764ec4b94b4e148a2192e0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Flakes
+      second:
+        m_Texture: {fileID: 2800000, guid: 2741be98b31d56c43ad9cfbcaf99a799, type: 3}
+        m_Scale: {x: 6, y: 6}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _FlakesNormal
+      second:
+        m_Texture: {fileID: 2800000, guid: a268ab862991c4743a9281c69bb2c36a, type: 3}
+        m_Scale: {x: 4, y: 4}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _FlakesRGBcolorvariationAmask
+      second:
+        m_Texture: {fileID: 2800000, guid: 2741be98b31d56c43ad9cfbcaf99a799, type: 3}
+        m_Scale: {x: 4, y: 4}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _MaskFlaks
+      second:
+        m_Texture: {fileID: 2800000, guid: 21a6bd9b3f2c90047b38cea2fe37f5bb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _OrangePeelNormal
+      second:
+        m_Texture: {fileID: 2800000, guid: b3d940e75e1f5d24684cd93a2758e1bf, type: 3}
+        m_Scale: {x: 5, y: 5}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _T_FlakeMask
+      second:
+        m_Texture: {fileID: 2800000, guid: f3337d1b16764ec4b94b4e148a2192e0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _T_MetalFlakes_N
+      second:
+        m_Texture: {fileID: 2800000, guid: 24496d6d8719fad4f864e967fbda4576, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _TextureSample0
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _TextureSample1
+      second:
+        m_Texture: {fileID: 2800000, guid: 40bd4a70901dcd14ca65688f3f08b7c8, type: 3}
+        m_Scale: {x: 50, y: 50}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _normal_flakes_Flake_Mask
+      second:
+        m_Texture: {fileID: 2800000, guid: a5cb640d1bcc09742b602f9a846b6f89, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _normal_flakes_output
+      second:
+        m_Texture: {fileID: 2800000, guid: da27fb303f4a4214eb9a79e0ee21736e, type: 3}
+        m_Scale: {x: 4, y: 4}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _normal_flakes_outputcolors
+      second:
+        m_Texture: {fileID: 2800000, guid: 8f0e673104ee74d4e8b81221b12ef44d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _texcoord
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _texcoord2
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _A
+      second: 1
+    - first:
+        name: _B
+      second: 1
+    - first:
+        name: _BaseMetallic
+      second: 0.6
+    - first:
+        name: _BaseOcclusion
+      second: 0
+    - first:
+        name: _BaseSmoothness
+      second: 0.4
+    - first:
+        name: _Brightness
+      second: 1
+    - first:
+        name: _CarMetallic
+      second: 0.5049318
+    - first:
+        name: _CarSmoothness
+      second: 0
+    - first:
+        name: _CarSmoothnessMax
+      second: 1
+    - first:
+        name: _CarSmoothnessMin
+      second: 0.36406696
+    - first:
+        name: _ClearCoatSmoothness
+      second: 0.95
+    - first:
+        name: _Coat
+      second: 0.3
+    - first:
+        name: _CoatAmount
+      second: 1
+    - first:
+        name: _CoatBump
+      second: 0.1
+    - first:
+        name: _CoatSmoothness
+      second: 0.95
+    - first:
+        name: _FlakeColorVariationAmount
+      second: 0.08
+    - first:
+        name: _FlakesBrightness
+      second: 1
+    - first:
+        name: _FlakesBump
+      second: 0.5
+    - first:
+        name: _FlakesMetallic
+      second: 0.8
+    - first:
+        name: _FlakesScale
+      second: 50
+    - first:
+        name: _FlakesSmoothness
+      second: 0.5
+    - first:
+        name: _FlakesTilling
+      second: 0
+    - first:
+        name: _Float0
+      second: 1
+    - first:
+        name: _Float1
+      second: 0.5
+    - first:
+        name: _Float2
+      second: 0.6
+    - first:
+        name: _Float3
+      second: 0
+    - first:
+        name: _Float4
+      second: 0.5
+    - first:
+        name: _OrangePeelBump
+      second: 0.2
+    - first:
+        name: _OrangePeelSmoothness
+      second: 0.95
+    - first:
+        name: _OrangePeelTilling
+      second: 20
+    - first:
+        name: _Phase
+      second: 0.02
+    - first:
+        name: _Smooth
+      second: 0.5
+    - first:
+        name: _Tilling
+      second: 1
+    - first:
+        name: __dirty
+      second: 0
+    m_Colors:
+    - first:
+        name: _BaseColor
+      second: {r: 0.3970588, g: 0.19232786, b: 0.03503461, a: 0}
+    - first:
+        name: _BaseColor1
+      second: {r: 0.3970579, g: 0.19232696, b: 0.03503461, a: 0}
+    - first:
+        name: _BaseColor2
+      second: {r: 0.035034638, g: 0.08247142, b: 0.39705792, a: 0}
+    - first:
+        name: _CarColor
+      second: {r: 0.08832457, g: 0.07493501, b: 0.46323526, a: 0}
+    - first:
+        name: _CarPaintColor
+      second: {r: 0.088324, g: 0.074934505, b: 0.46323526, a: 0}
+    - first:
+        name: _Color1
+      second: {r: 0.021626277, g: 0.056079105, b: 0.7352942, a: 0.953}
+    - first:
+        name: _Color3
+      second: {r: 0.035034638, g: 0.08247225, b: 0.39705884, a: 0}
+    - first:
+        name: _FlakesColor
+      second: {r: 0.73529416, g: 0.021626318, b: 0.36123332, a: 0.953}
+    - first:
+        name: _FlakesColor1
+      second: {r: 0.73529416, g: 0.021626318, b: 0.3612324, a: 0}
+    - first:
+        name: _FlakesColor2
+      second: {r: 0.021626277, g: 0.056078404, b: 0.7352942, a: 0}
+    - first:
+        name: _Offset1
+      second: {r: 1.2, g: 6.53, b: -6.86, a: 0}

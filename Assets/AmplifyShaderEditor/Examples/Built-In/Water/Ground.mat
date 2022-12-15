@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Ground
+  m_Shader: {fileID: 4800000, guid: 2df1e2de0d3e0904f8b943ac141f0aac, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs: []
+    m_Floats:
+    - first:
+        name: _Float0
+      second: 0.66
+    - first:
+        name: _Float1
+      second: 2
+    - first:
+        name: __dirty
+      second: 0
+    m_Colors:
+    - first:
+        name: _Bottom
+      second: {r: 0.23529398, g: 0.20613277, b: 0.19031128, a: 0}
+    - first:
+        name: _Color0
+      second: {r: 0.6117647, g: 0.6, b: 0.4666664, a: 0}
+    - first:
+        name: _Color1
+      second: {r: 0, g: 0, b: 0, a: 0}
+    - first:
+        name: _Top
+      second: {r: 0.6117647, g: 0.6, b: 0.4666664, a: 0}

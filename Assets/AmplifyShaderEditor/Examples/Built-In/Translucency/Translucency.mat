@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Translucency
+  m_Shader: {fileID: 4800000, guid: d6909e30fd813df40bdd9301d7d96ba4, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _Albedo
+      second:
+        m_Texture: {fileID: 2800000, guid: ca1a5e504324857499d1fdeb25489439, type: 3}
+        m_Scale: {x: 5, y: 5}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Depth
+      second:
+        m_Texture: {fileID: 2800000, guid: d7587323b7bbc084ab37898fd841d0fa, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Normal
+      second:
+        m_Texture: {fileID: 2800000, guid: 233518d21026a2e4397650a59649e438, type: 3}
+        m_Scale: {x: 5, y: 5}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _TextureSample0
+      second:
+        m_Texture: {fileID: 2800000, guid: 24b7ed9293c712a4bb5e0e66badcc3e0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _Float0
+      second: 0
+    - first:
+        name: _ScatteringPower
+      second: 1
+    - first:
+        name: _Shininess
+      second: 0.01
+    - first:
+        name: _Specular
+      second: 0.204
+    - first:
+        name: _Test
+      second: 0.1
+    - first:
+        name: _TransAmbient
+      second: 0.243
+    - first:
+        name: _TransDirect
+      second: 0.584
+    - first:
+        name: _TransNormalDistortion
+      second: 0.059
+    - first:
+        name: _TransScattering
+      second: 11.3
+    - first:
+        name: _TransShadow
+      second: 0.226
+    - first:
+        name: _Translucency
+      second: 9.8
+    - first:
+        name: __dirty
+      second: 0
+    m_Colors:
+    - first:
+        name: _Color
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _Color0
+      second: {r: 0.8235294, g: 0.01703852, b: 0, a: 0}
+    - first:
+        name: _Color1
+      second: {r: 0, g: 0, b: 0, a: 0}
+    - first:
+        name: _Tint
+      second: {r: 0.4788062, g: 0.495072, b: 0.60294116, a: 0}
+    - first:
+        name: _TransmissionParams
+      second: {r: 0.1, g: 6, b: -2.03, a: 16.95}
+    - first:
+        name: _Vector0
+      second: {r: 0, g: 0, b: 0, a: 0}

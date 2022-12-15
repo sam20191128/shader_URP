@@ -1,0 +1,6 @@
+Created by The Four Headed Cat @fourheadedcat - https://twitter.com/fourheadedcat
+Two sided shader with different texture / color for inner and outer faces.
+You are free to modify and use any of the available shader examples in your own projects.
+
+Keep them coming, contribute today! 
+http://amplify.pt/unity/amplify-shader-editor/contribute

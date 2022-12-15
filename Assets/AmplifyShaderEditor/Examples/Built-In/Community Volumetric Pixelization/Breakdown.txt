@@ -1,0 +1,7 @@
+The effect works in two passes :
+
+ - 	The screen and the volumetric sphere mask are stored in an intermediate render texture (Screen = RGB, Mask = A).
+	By enabling the render texture's mipmaps and by setting the filter mode to point (no interpolation between pixels) we can achieve a virtually free pixelization of the texture. Each mip level will be twice more pixelated than the previous one.
+	You can change the mask for any other at this stage (see the "Screen And Mask" shader) and the rest of the pixelization will still work with your own mask.
+
+ - 	We then iterate through the render texture and layer by layer sample in a different mip level, according to the wanted amount of pixelization.

@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: MaskingFunction
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor\n// Available at the Unity Asset
+    Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=14403\n-1913;39;1906;1004;1787.57;758.8854;1.3;True;True\nNode;AmplifyShaderEditor.CommentaryNode;40;-929.6825,-80.5762;Float;False;667;177;;2;30;29;Subtract
+    previous raw mask from current raw mask to get desired mask;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;35;-1414.814,-20.80603;Float;False;271;165;;1;25;Input
+    value to mask up to;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;36;-1054.582,209.7238;Float;False;469.1;163.9;Assumes
+    same clip increment is to be used everytime;1;26;Clip increment (0.2);1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;41;-913.7648,-451.627;Float;False;454.6752;293.6386;;1;22;Mask
+    in everything below end clip value;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;33;-1409.669,-429.0101;Float;False;256;307;;1;21;Input
+    texture;1,1,1,1;0;0\nNode;AmplifyShaderEditor.StepOpNode;22;-863.7648,-401.627;Float;True;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;25;-1364.814,33.0238;Float;False;End
+    clip value;1;2;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;30;-863.6825,-21.57619;Float;False;Previous
+    raw mask;1;1;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleSubtractOpNode;29;-528.6825,-26.57619;Float;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CommentaryNode;38;23.74015,-85.85087;Float;False;250;160;;1;0;Output
+    mask;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;34;-356.5163,-411.1673;Float;False;241;160;;1;32;Output
+    raw mask;1,1,1,1;0;0\nNode;AmplifyShaderEditor.FunctionInput;21;-1356.669,-372.0101;Float;True;Tex;1;0;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;26;-1004.583,259.7238;Float;False;2;2;0;FLOAT;0;False;1;FLOAT;0.2;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CommentaryNode;37;-431.6128,208.6536;Float;False;262;160;;1;28;Output
+    next start clip value;1,1,1,1;0;0\nNode;AmplifyShaderEditor.FunctionOutput;32;-306.5163,-361.1673;Float;False;False;Raw
+    mask;1;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;28;-380.4424,264.5044;Float;False;False;Next
+    clip value;2;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;0;84.22963,-26.53156;Float;False;True;Colour
+    Mask;0;False;1;0;FLOAT;0;False;1;FLOAT;0\nWireConnection;22;0;21;0\nWireConnection;22;1;25;0\nWireConnection;29;0;22;0\nWireConnection;29;1;30;0\nWireConnection;26;0;25;0\nWireConnection;32;0;22;0\nWireConnection;28;0;26;0\nWireConnection;0;0;29;0\nASEEND*/\n//CHKSM=0A2DC62617172CE4E0758CE8C494FE425344FBC0"
+  m_functionName: 
+  m_description: 
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_nodeCategory: 3
+  m_customNodeCategory: 
+  m_previewPosition: 0

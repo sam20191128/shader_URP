@@ -1,0 +1,123 @@
+fileFormatVersion: 2
+guid: 1737fc9b67284ab49a5d9233909c9f27
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: baseCourse_mesh
+    100002: drainagePipe_mesh
+    100004: earthFoundation_mesh
+    100006: embankment_01_mesh
+    100008: embankment_02_mesh
+    100010: road_mesh
+    100012: //RootNode
+    100014: shoulder_mesh
+    100016: subBase_mesh
+    100018: subGrade_Mesh
+    400000: baseCourse_mesh
+    400002: drainagePipe_mesh
+    400004: earthFoundation_mesh
+    400006: embankment_01_mesh
+    400008: embankment_02_mesh
+    400010: road_mesh
+    400012: //RootNode
+    400014: shoulder_mesh
+    400016: subBase_mesh
+    400018: subGrade_Mesh
+    2300000: baseCourse_mesh
+    2300002: drainagePipe_mesh
+    2300004: earthFoundation_mesh
+    2300006: embankment_01_mesh
+    2300008: embankment_02_mesh
+    2300010: road_mesh
+    2300012: shoulder_mesh
+    2300014: subBase_mesh
+    2300016: subGrade_Mesh
+    3300000: baseCourse_mesh
+    3300002: drainagePipe_mesh
+    3300004: earthFoundation_mesh
+    3300006: embankment_01_mesh
+    3300008: embankment_02_mesh
+    3300010: road_mesh
+    3300012: shoulder_mesh
+    3300014: subBase_mesh
+    3300016: subGrade_Mesh
+    4300000: road_mesh
+    4300002: shoulder_mesh
+    4300004: baseCourse_mesh
+    4300006: subBase_mesh
+    4300008: subGrade_Mesh
+    4300010: embankment_01_mesh
+    4300012: embankment_02_mesh
+    4300014: earthFoundation_mesh
+    4300016: drainagePipe_mesh
+    9500000: //RootNode
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 0
+    keepQuads: 0
+    weldVertices: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: SimplePotionLiquid
+  m_Shader: {fileID: 4800000, guid: 2412fbe5d26e85d4a8ff9e8d959f953c, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: <noninit>
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Burnt_normals
+      second:
+        m_Texture: {fileID: 2800000, guid: e9742c575b8f4644fb9379e7347ff62e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _TextureSample0
+      second:
+        m_Texture: {fileID: 2800000, guid: a268ab862991c4743a9281c69bb2c36a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _texcoord
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: <noninit>
+      second: 0
+    - first:
+        name: _Falloff
+      second: 0.03
+    - first:
+        name: _Faloff
+      second: 0.02
+    - first:
+        name: _Float0
+      second: -0.01
+    - first:
+        name: _Height
+      second: 1.09
+    - first:
+        name: _Opacity
+      second: 0.95
+    - first:
+        name: _Size
+      second: 0.31
+    - first:
+        name: _Speed
+      second: 7.88
+    - first:
+        name: __dirty
+      second: 1
+    m_Colors:
+    - first:
+        name: <noninit>
+      second: {r: 0, g: 1.4264235e-33, b: 0, a: 1.4264176e-33}
+    - first:
+        name: _BaseColor
+      second: {r: 0.8602941, g: 0.025302794, b: 0.025302794, a: 1}
+    - first:
+        name: _Color
+      second: {r: 1, g: 0, b: 0, a: 0}
+    - first:
+        name: _Color0
+      second: {r: 0.983, g: 0.13467102, b: 0.13467102, a: 1}
+    - first:
+        name: _TopColor
+      second: {r: 0.9459999, g: 0.098209865, b: 0.026487997, a: 1}

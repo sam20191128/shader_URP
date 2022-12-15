@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ParallaxMappingIterations
+  m_Shader: {fileID: 4800000, guid: 9cfe017c59b6a344d91f3148c4f8bca8, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _Albedo
+      second:
+        m_Texture: {fileID: 2800000, guid: efd0eee9e4394a94db1426ce0bb7a902, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _HeightMap
+      second:
+        m_Texture: {fileID: 2800000, guid: 9f8d9d9e60979574ea22974d2e2c08d4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Metallic
+      second:
+        m_Texture: {fileID: 2800000, guid: d4940c862b9d0f349b3eec6e0da05578, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Normal
+      second:
+        m_Texture: {fileID: 2800000, guid: 00e0021f9f2d77a4fb3d5957267488e7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Occlusion
+      second:
+        m_Texture: {fileID: 2800000, guid: 120ede8c4897abf488ebbcd0d0b46ede, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Smoothness
+      second:
+        m_Texture: {fileID: 2800000, guid: b97db8acddac10d4c867939fcd38e487, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _texcoord
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _MetallicAmount
+      second: 0
+    - first:
+        name: _NormalScale
+      second: 1
+    - first:
+        name: _Parallax
+      second: 0.01
+    - first:
+        name: _SmoothnessScale
+      second: 0.8
+    - first:
+        name: _SpecularAmount
+      second: 0
+    - first:
+        name: _Tiling
+      second: 1
+    - first:
+        name: __dirty
+      second: 0
+    m_Colors: []

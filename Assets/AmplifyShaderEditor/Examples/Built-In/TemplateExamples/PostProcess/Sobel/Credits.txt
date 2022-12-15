@@ -1,0 +1,5 @@
+Effect based on Sobel Filter shader by Forceflow
+https://www.shadertoy.com/view/Xdf3Rf
+
+Keep them coming, contribute today! 
+http://amplify.pt/unity/amplify-shader-editor/contribute

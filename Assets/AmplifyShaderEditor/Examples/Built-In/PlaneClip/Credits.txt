@@ -1,0 +1,2 @@
+This sample was based on the tutorial by Ronja Bohringer
+https://www.ronja-tutorials.com/2018/08/06/plane-clipping.html

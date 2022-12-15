@@ -1,0 +1,6 @@
+Created by The Four Headed Cat @fourheadedcat - https://twitter.com/fourheadedcat	
+Sample of shader with "Highlighted animation" feature, to highlight objects for example. Including the use of the switch node and a ping pong animation between two values.
+You are free to modify and use any of the available shader examples in your own projects.
+
+Keep them coming, contribute today! 
+http://amplify.pt/unity/amplify-shader-editor/contribute

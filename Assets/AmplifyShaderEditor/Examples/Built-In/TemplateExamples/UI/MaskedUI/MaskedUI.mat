@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: MaskedUI
+  m_Shader: {fileID: 4800000, guid: 4ed5816d2a4df0e43907e464a7ed7a45, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _MainTex
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Texture0
+      second:
+        m_Texture: {fileID: 2800000, guid: 80ab37a9e4f49c842903bb43bdd7bcd2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _TextureSample1
+      second:
+        m_Texture: {fileID: 2800000, guid: 555b6a287b4121b479d412e6ea92bb2e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _TextureSample2
+      second:
+        m_Texture: {fileID: 2800000, guid: 596678c53fd54a640bf95ba7dfafd092, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _ColorMask
+      second: 15
+    - first:
+        name: _Float0
+      second: 3.89
+    - first:
+        name: _NoiseSpeed
+      second: 1
+    - first:
+        name: _Stencil
+      second: 0
+    - first:
+        name: _StencilComp
+      second: 8
+    - first:
+        name: _StencilOp
+      second: 0
+    - first:
+        name: _StencilReadMask
+      second: 255
+    - first:
+        name: _StencilWriteMask
+      second: 255
+    - first:
+        name: _TimeScale
+      second: 1
+    - first:
+        name: _UseUIAlphaClip
+      second: 0
+    - first:
+        name: _WaveAmplitudeA
+      second: 0.2
+    - first:
+        name: _WaveAmplitudeB
+      second: 0.2
+    - first:
+        name: _WaveWidth
+      second: 5.3
+    - first:
+        name: _WaveWidthA
+      second: 8
+    - first:
+        name: _WaveWidthB
+      second: 8
+    - first:
+        name: _YDisplacement
+      second: 1
+    - first:
+        name: _YDisplacementA
+      second: 0
+    - first:
+        name: _YDisplacementB
+      second: 5
+    - first:
+        name: _YDisplacemeny
+      second: 1
+    m_Colors:
+    - first:
+        name: _Color
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _Color0
+      second: {r: 1, g: 0, b: 0, a: 1}
+    - first:
+        name: _ColorWaveA
+      second: {r: 0.4485294, g: 0.313166, b: 0.1517085, a: 1}
+    - first:
+        name: _ColorWaveB
+      second: {r: 1, g: 0.376056, b: 0.05882353, a: 1}
+    - first:
+        name: _NoiseOffset
+      second: {r: 9.24, g: 0, b: 0, a: 0}
+    - first:
+        name: _NoiseTiling
+      second: {r: -0.51, g: 0.95, b: 0, a: 0}

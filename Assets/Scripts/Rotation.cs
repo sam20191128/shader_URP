@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class Rotation : MonoBehaviour
 {
     public Vector3 _rotationAxis = new Vector3(0, 1, 0);

@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ReflectRefractSoapBubble
+  m_Shader: {fileID: 4800000, guid: e37aab3ee653fbf48aca4fb2e2eca84c, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _CubeMap
+      second:
+        m_Texture: {fileID: 8900000, guid: 56a68e301a0ff55469ae441c0112d256, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Foam
+      second:
+        m_Texture: {fileID: 2800000, guid: d01457b88b1c5174ea4235d140b5fab8, type: 3}
+        m_Scale: {x: 2, y: 2}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Normal
+      second:
+        m_Texture: {fileID: 2800000, guid: 302951faffe230848aa0d3df7bb70faa, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _NormalMap
+      second:
+        m_Texture: {fileID: 2800000, guid: 233518d21026a2e4397650a59649e438, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _TextureSample0
+      second:
+        m_Texture: {fileID: 2800000, guid: d01457b88b1c5174ea4235d140b5fab8, type: 3}
+        m_Scale: {x: 2, y: 2}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _TextureSample1
+      second:
+        m_Texture: {fileID: 2800000, guid: e28dc97a9541e3642a48c0e3886688c5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _TextureSample2
+      second:
+        m_Texture: {fileID: 2800000, guid: ca49521751c47fa43ad25cf88ad49249, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _TextureSample3
+      second:
+        m_Texture: {fileID: 2800000, guid: bb47b838a0905154496dfe9920ae73b0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _texcoord
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _texcoord2
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _ChromaticAberration
+      second: 0.3
+    - first:
+        name: _DeformFrequency
+      second: 5
+    - first:
+        name: _Float0
+      second: 0.811
+    - first:
+        name: _Float1
+      second: 0.77
+    - first:
+        name: _Float2
+      second: 0
+    - first:
+        name: _Float3
+      second: 5
+    - first:
+        name: _IndexofRefraction
+      second: 3
+    - first:
+        name: _Mirror
+      second: 0.5
+    - first:
+        name: _NormalScale
+      second: 0
+    - first:
+        name: _Opacity
+      second: 0.2
+    - first:
+        name: _Smooth
+      second: 0.882
+    - first:
+        name: _Smoothness
+      second: 0.95
+    - first:
+        name: _SoapAmount
+      second: 0.4
+    - first:
+        name: _Spec
+      second: 1
+    - first:
+        name: _Specular
+      second: 0.5
+    - first:
+        name: __dirty
+      second: 0
+    m_Colors:
+    - first:
+        name: _Albedo
+      second: {r: 0.034482718, g: 1, b: 0, a: 1}

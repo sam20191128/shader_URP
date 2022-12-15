@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: embankment_01
+  m_Shader: {fileID: 4800000, guid: d100e7003951b81459dce378f51f19ad, type: 3}
+  m_ShaderKeywords: _ACTIVATECLIP_ON
+  m_LightmapFlags: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: <noninit>
+      second:
+        m_Texture: {fileID: 2800000, guid: 7b705e3c0dd4d4240acdbee5cfcd62c8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Smoothness
+      second:
+        m_Texture: {fileID: 2800000, guid: 7b705e3c0dd4d4240acdbee5cfcd62c8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Textured_Course_AlbedoTransparency
+      second:
+        m_Texture: {fileID: 2800000, guid: 4926e29c8bd5a29479b03ae385fa85dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _texcoord
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: <noninit>
+      second: 1
+    - first:
+        name: _ActivateClip
+      second: 1
+    - first:
+        name: __dirty
+      second: 0
+    m_Colors:
+    - first:
+        name: <noninit>
+      second: {r: 0.16862746, g: 0.19607845, b: 0.21568629, a: 0}
+    - first:
+        name: _CutoffColor
+      second: {r: 0.16862746, g: 0.19607843, b: 0.21568628, a: 1}
+    - first:
+        name: _Emission
+      second: {r: 0, g: 0, b: 0, a: 0}

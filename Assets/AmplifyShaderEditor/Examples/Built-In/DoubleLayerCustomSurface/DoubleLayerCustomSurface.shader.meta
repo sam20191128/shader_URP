@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 3beb92be39dd4b146a37ed79eba96c07
+timeCreated: 1506356172
+licenseType: Pro
+ShaderImporter:
+  defaultTextures:
+  - _FlakesRGBcolorvariationAmask: {fileID: 2800000, guid: 2741be98b31d56c43ad9cfbcaf99a799,
+      type: 3}
+  - _FlakesNormal: {fileID: 2800000, guid: 24496d6d8719fad4f864e967fbda4576, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

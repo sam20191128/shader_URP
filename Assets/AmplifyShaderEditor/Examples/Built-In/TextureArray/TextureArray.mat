@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: TextureArray
+  m_Shader: {fileID: 4800000, guid: 777daed654e50c048be3ecf97fac28e2, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _TextureArrayAlbedo
+      second:
+        m_Texture: {fileID: 18700000, guid: 2a1e45aec61cb9b41830e680aef0d4bf, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _TextureArrayGamma
+      second:
+        m_Texture: {fileID: 18700000, guid: 2a1e45aec61cb9b41830e680aef0d4bf, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _TextureArrayLinear
+      second:
+        m_Texture: {fileID: 18700000, guid: 18abd59f757787242ac884d340d0718c, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _TextureArrayNormal
+      second:
+        m_Texture: {fileID: 18700000, guid: 18abd59f757787242ac884d340d0718c, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _texcoord
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _NormalScale
+      second: 1
+    - first:
+        name: _RoughScale
+      second: 0.1
+    - first:
+        name: __dirty
+      second: 0
+    m_Colors: []

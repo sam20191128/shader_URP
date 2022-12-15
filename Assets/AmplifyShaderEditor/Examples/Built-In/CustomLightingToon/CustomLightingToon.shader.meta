@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 5dde35cabcdd6d84e916c4a7b1cfebc3
+timeCreated: 1496749032
+licenseType: Pro
+ShaderImporter:
+  defaultTextures:
+  - _Diffuse: {fileID: 2800000, guid: 84508b93f15f2b64386ec07486afc7a3, type: 3}
+  - _ToonRamp: {fileID: 2800000, guid: 52e66a9243cdfed44b5e906f5910d35b, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,154 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: CustomOutlineToonStyle1
+  m_Shader: {fileID: 4800000, guid: 8b2f353da1dd05244a7bee1562a2306a, type: 3}
+  m_ShaderKeywords: _KEYWORD0_ON _STATICHIGHLIGHTS_ON
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _BaseColor
+      second:
+        m_Texture: {fileID: 2800000, guid: b20d2974a8b655d43bf94dca50a48814, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _BaseColorRGBOutlineWidthA
+      second:
+        m_Texture: {fileID: 2800000, guid: e70a4cc9a27a530468623a76c6c025fe, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Highlight
+      second:
+        m_Texture: {fileID: 2800000, guid: e2ef9dde094871440bfdfb42d0165a1e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _NormalMap
+      second:
+        m_Texture: {fileID: 2800000, guid: baa87608a082eff4a8c5c1aa7c5bb623, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Specular
+      second:
+        m_Texture: {fileID: 2800000, guid: d0e02d16b9b1ab349a4dc2481cc01d37, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _texcoord
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _BaseCellOffset
+      second: 0
+    - first:
+        name: _BaseCellSharpness
+      second: 0.01
+    - first:
+        name: _BaseCellshadeOffset
+      second: 0
+    - first:
+        name: _BaseCellshadeSharpness
+      second: 0.01
+    - first:
+        name: _DiffuseCellshadeOffset
+      second: 0
+    - first:
+        name: _DiffuseCellshadeSharpness
+      second: 0.01
+    - first:
+        name: _Float0
+      second: 1
+    - first:
+        name: _HighlightCellOffset
+      second: -0.833
+    - first:
+        name: _HighlightCellSharpness
+      second: 0.01
+    - first:
+        name: _IndirectContribution
+      second: 0.762
+    - first:
+        name: _IndirectDiffuseContribution
+      second: 0
+    - first:
+        name: _IndirectSpecularContribution
+      second: 0
+    - first:
+        name: _Keyword0
+      second: 1
+    - first:
+        name: _NormalScale
+      second: 0.5
+    - first:
+        name: _OutlineWidth
+      second: 0.04
+    - first:
+        name: _RimOff
+      second: 0.6
+    - first:
+        name: _RimOffset
+      second: 0.65
+    - first:
+        name: _RimPower
+      second: 0.3
+    - first:
+        name: _ShadowContribution
+      second: 0.75
+    - first:
+        name: _SpecularOffset
+      second: -0.95
+    - first:
+        name: _SpecularSharpness
+      second: 0.01
+    - first:
+        name: _StaticHighLights
+      second: 1
+    - first:
+        name: _TessMax
+      second: 25
+    - first:
+        name: _TessMin
+      second: 10
+    - first:
+        name: _TessPhongStrength
+      second: 0.5
+    - first:
+        name: _TessValue
+      second: 4
+    - first:
+        name: __dirty
+      second: 0
+    m_Colors:
+    - first:
+        name: _BaseTint
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _HighlightTint
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _OutlineTint
+      second: {r: 0.6397059, g: 0.6397059, b: 0.6397059, a: 0}
+    - first:
+        name: _RimColor
+      second: {r: 1.292, g: 1.9380004, b: 2.584, a: 1}
+    - first:
+        name: _SpecularTint
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _TintBaseColor
+      second: {r: 1, g: 1, b: 1, a: 0}

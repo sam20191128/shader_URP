@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ProceduralWall
+  m_Shader: {fileID: 4800000, guid: 23bd99d7f99a40345bb956c4aa47162c, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _BrickAlbedo
+      second:
+        m_Texture: {fileID: 2800000, guid: b297077dae62c1944ba14cad801cddf5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _BrickNormal
+      second:
+        m_Texture: {fileID: 2800000, guid: 0bebe40e9ebbecc48b8e9cfea982da7e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _InnerAlbedo
+      second:
+        m_Texture: {fileID: 2800000, guid: 00d034bb5072d8043a98b8a4aae5a40d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _InnerNormal
+      second:
+        m_Texture: {fileID: 2800000, guid: 7ddcba51d9fc0894d98b4ba77fbdfbd7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Noise
+      second:
+        m_Texture: {fileID: 2800000, guid: bdbe94d7623ec3940947b62544306f1c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _TextureSample0
+      second:
+        m_Texture: {fileID: 2800000, guid: 16d574e53541bba44a84052fa38778df, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _TextureSample1
+      second:
+        m_Texture: {fileID: 2800000, guid: b297077dae62c1944ba14cad801cddf5, type: 3}
+        m_Scale: {x: 2, y: 2}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _TextureSample2
+      second:
+        m_Texture: {fileID: 2800000, guid: 00d034bb5072d8043a98b8a4aae5a40d, type: 3}
+        m_Scale: {x: 2, y: 2}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _TextureSample3
+      second:
+        m_Texture: {fileID: 2800000, guid: 7ddcba51d9fc0894d98b4ba77fbdfbd7, type: 3}
+        m_Scale: {x: 2, y: 2}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _TextureSample4
+      second:
+        m_Texture: {fileID: 2800000, guid: 0bebe40e9ebbecc48b8e9cfea982da7e, type: 3}
+        m_Scale: {x: 2, y: 2}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _texcoord
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _BrickHeight
+      second: 0.16
+    - first:
+        name: _BrickTiling
+      second: 4
+    - first:
+        name: _EdgeLength
+      second: 12
+    - first:
+        name: _Float2
+      second: 0.001
+    - first:
+        name: _Float4
+      second: 0.08187147
+    - first:
+        name: _Float6
+      second: 0.21346533
+    - first:
+        name: _NoiseIntensity
+      second: 0.2
+    - first:
+        name: _Slope
+      second: 0.025
+    - first:
+        name: _TessMax
+      second: 25
+    - first:
+        name: _TessMin
+      second: 10
+    - first:
+        name: _TessPhongStrength
+      second: 1
+    - first:
+        name: _TessValue
+      second: 12
+    - first:
+        name: _Zoom
+      second: 5
+    - first:
+        name: __dirty
+      second: 0
+    m_Colors:
+    - first:
+        name: _PatternSize
+      second: {r: 0.9, g: 0.9, b: 0, a: 0}
+    - first:
+        name: _Size
+      second: {r: 0.9, g: 0.9, b: 0, a: 0}

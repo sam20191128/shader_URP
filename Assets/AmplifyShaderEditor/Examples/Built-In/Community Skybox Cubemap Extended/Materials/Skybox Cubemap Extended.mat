@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Skybox Cubemap Extended
+  m_Shader: {fileID: 4800000, guid: 923b9cf3e9954edd82dcc80b12aeb17a, type: 3}
+  m_ShaderKeywords: _ENABLEFOG_ON _ENABLEROTATION_ON
+  m_LightmapFlags: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: <noninit>
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Tex
+      second:
+        m_Texture: {fileID: 8900000, guid: a9f053d430424adb925523ba78342596, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: <noninit>
+      second: 1
+    - first:
+        name: _EnableFog
+      second: 1
+    - first:
+        name: _EnableRotation
+      second: 1
+    - first:
+        name: _Exposure
+      second: 1
+    - first:
+        name: _FogFill
+      second: 0
+    - first:
+        name: _FogHeight
+      second: 0.6
+    - first:
+        name: _FogSmoothness
+      second: 0.01
+    - first:
+        name: _Rotation
+      second: 0
+    - first:
+        name: _RotationSpeed
+      second: 2
+    - first:
+        name: __dirty
+      second: 0
+    m_Colors:
+    - first:
+        name: <noninit>
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _TintColor
+      second: {r: 0.5, g: 0.5, b: 0.5, a: 1}

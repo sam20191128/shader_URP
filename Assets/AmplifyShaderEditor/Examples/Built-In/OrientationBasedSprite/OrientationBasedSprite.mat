@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: OrientationBasedSprite
+  m_Shader: {fileID: 4800000, guid: 0ba9edbec87453d4e9df07f9ffc0e2b7, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 1
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _Texture0
+      second:
+        m_Texture: {fileID: 2800000, guid: f2e0c334ffe42f740b78bcb2d549b12c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _TextureSheet
+      second:
+        m_Texture: {fileID: 2800000, guid: af1413e1f4cddc041a517895567be041, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _AnimSpeed
+      second: 1
+    - first:
+        name: _Columns
+      second: 3
+    - first:
+        name: _Frames
+      second: 8
+    - first:
+        name: _Rows
+      second: 8
+    - first:
+        name: __dirty
+      second: 0
+    m_Colors: []

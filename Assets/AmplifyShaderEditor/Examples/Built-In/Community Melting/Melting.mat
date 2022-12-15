@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Melting
+  m_Shader: {fileID: 4800000, guid: caf15d259038dce419a391a94b6e2b45, type: 3}
+  m_ShaderKeywords: _ANIMATEDMELT_ON _TOGGLEANIMATEDFX_ON _TOGGLECONTROLTYPE_ON
+  m_LightmapFlags: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: <noninit>
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _BaseNormal
+      second:
+        m_Texture: {fileID: 2800000, guid: bd734c29baceb63499732f24fbaea45f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _BrushedMetalNormal
+      second:
+        m_Texture: {fileID: 2800000, guid: bd734c29baceb63499732f24fbaea45f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _DisplaceNoise
+      second:
+        m_Texture: {fileID: 2800000, guid: cd460ee4ac5c1e746b7a734cc7cc64dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Normal
+      second:
+        m_Texture: {fileID: 2800000, guid: bd734c29baceb63499732f24fbaea45f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _TextureSample0
+      second:
+        m_Texture: {fileID: 2800000, guid: cd460ee4ac5c1e746b7a734cc7cc64dd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _texcoord
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: <noninit>
+      second: 0
+    - first:
+        name: _AlbedoSmoothness
+      second: 14.61
+    - first:
+        name: _AnimatedMelt
+      second: 1
+    - first:
+        name: _Float0
+      second: 1.64
+    - first:
+        name: _Float1
+      second: 1.92
+    - first:
+        name: _Intensity
+      second: 8
+    - first:
+        name: _Limit
+      second: 2.78
+    - first:
+        name: _ManualControl
+      second: 0.84
+    - first:
+        name: _Metallic
+      second: 1
+    - first:
+        name: _NoiseMultiply
+      second: 1.92
+    - first:
+        name: _NoiseScale
+      second: 0.0527
+    - first:
+        name: _Oscillation
+      second: 2.24
+    - first:
+        name: _Smoothness
+      second: 0.6536242
+    - first:
+        name: _ToggleAnimatedFX
+      second: 1
+    - first:
+        name: _ToggleControlType
+      second: 1
+    - first:
+        name: _ToggleSwitch0
+      second: 0
+    - first:
+        name: __dirty
+      second: 0
+    m_Colors:
+    - first:
+        name: <noninit>
+      second: {r: 0, g: 1.7256007e-33, b: 0, a: 1.725589e-33}
+    - first:
+        name: _BaseColor
+      second: {r: 0.26470563, g: 0.26470563, b: 0.26470563, a: 0}
+    - first:
+        name: _Color1
+      second: {r: 1.354, g: 0.30815142, b: 0, a: 1}
+    - first:
+        name: _Color2
+      second: {r: 12.517014, g: 11.653772, b: 0, a: 1}

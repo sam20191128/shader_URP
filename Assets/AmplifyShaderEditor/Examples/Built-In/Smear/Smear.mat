@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Smear
+  m_Shader: {fileID: 4800000, guid: 4fe64f6c7acd2a8459e3e867ce64ad2c, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _Albedo
+      second:
+        m_Texture: {fileID: 2800000, guid: d7587323b7bbc084ab37898fd841d0fa, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _Normal
+      second:
+        m_Texture: {fileID: 2800000, guid: 233518d21026a2e4397650a59649e438, type: 3}
+        m_Scale: {x: 2, y: 2}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _texcoord
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _EffectScale
+      second: 2
+    - first:
+        name: _Float4
+      second: 1
+    - first:
+        name: _Metallic
+      second: 0.235
+    - first:
+        name: _NoiseHeightScale
+      second: 0.3
+    - first:
+        name: _NoiseInfluence
+      second: 0.5
+    - first:
+        name: _NoiseScale
+      second: 0.5
+    - first:
+        name: _NoiseTilling
+      second: 4
+    - first:
+        name: _Smoothness
+      second: 0.372
+    - first:
+        name: _TessMax
+      second: 20
+    - first:
+        name: _TessMin
+      second: 10
+    - first:
+        name: _TessPhongStrength
+      second: 0.5
+    - first:
+        name: _TessValue
+      second: 4
+    - first:
+        name: __dirty
+      second: 0
+    m_Colors:
+    - first:
+        name: _Position
+      second: {r: -6.72, g: 5.75, b: -3.86, a: 0}
+    - first:
+        name: _PrevPosition
+      second: {r: -6.71, g: 5.75, b: -3.94, a: 0}
+    - first:
+        name: _Tint
+      second: {r: 1, g: 0.7363322, b: 0.4705881, a: 1}

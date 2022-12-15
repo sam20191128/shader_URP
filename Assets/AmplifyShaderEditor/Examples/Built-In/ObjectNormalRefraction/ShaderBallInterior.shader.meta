@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: b7cf1faa63154c947a1b4243576acb7a
+timeCreated: 1511534914
+licenseType: Pro
+ShaderImporter:
+  defaultTextures:
+  - _RubberNormal: {fileID: 2800000, guid: 066f29fd0fc3d0341b96857dcf2cede3, type: 3}
+  - _RubberDiffuse: {fileID: 2800000, guid: ff9da6b9c3ae4e8439ce851c4452c3a0, type: 3}
+  - _RubberSpecular: {fileID: 2800000, guid: 0688235f1fee46b4581bcc1cf189cf3a, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

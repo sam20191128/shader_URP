@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: Burn Effect
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor\n// Available at the Unity Asset
+    Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=7206\n796;92;1124;966;1614.299;512.2;1.6;False;False\nNode;AmplifyShaderEditor.TimeNode;1;-1494.3,62.49997;Float;False;0;5;FLOAT4;FLOAT;FLOAT;FLOAT;FLOAT\nNode;AmplifyShaderEditor.FunctionInput;14;-1446.799,-97.2999;Float;False;UV
+    Coordinates;2;1;True;1;0;FLOAT2;0,0;False;1;FLOAT2\nNode;AmplifyShaderEditor.SinTimeNode;6;-969.3996,444.6;Float;False;0;5;FLOAT4;FLOAT;FLOAT;FLOAT;FLOAT\nNode;AmplifyShaderEditor.PannerNode;2;-1159.9,-33.09998;Float;False;-1;0;2;0;FLOAT2;0,0;False;1;FLOAT;0.0;False;1;FLOAT2\nNode;AmplifyShaderEditor.SimpleAddOpNode;7;-765.3997,462.6;Float;False;2;0;FLOAT;0.0;False;1;FLOAT;1.5;False;1;FLOAT\nNode;AmplifyShaderEditor.FunctionInput;12;-832.8015,327.1005;Float;False;Fire
+    Intensity;1;0;True;1;0;FLOAT;0.0;False;1;FLOAT\nNode;AmplifyShaderEditor.SamplerNode;3;-924.3993,-231.9001;Float;True;Property;_BurnMask;Burn
+    Mask;1;0;Assets/AmplifyShaderEditor/Examples/Assets/Textures/SceneTextures/emiss_2.jpg;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;6;0;SAMPLER2D;0,0;False;1;FLOAT2;0,0;False;2;FLOAT;1.0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1.0;False;5;FLOAT4;FLOAT;FLOAT;FLOAT;FLOAT\nNode;AmplifyShaderEditor.SamplerNode;4;-912.3993,23.10002;Float;True;Property;_FireTexture;Fire
+    Texture;0;0;Assets/AmplifyShaderEditor/Examples/Assets/Textures/Misc/TileableFire.jpg;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;6;0;SAMPLER2D;0,0;False;1;FLOAT2;1.0;False;2;FLOAT;1.0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1.0;False;5;FLOAT4;FLOAT;FLOAT;FLOAT;FLOAT\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;9;-555.1996,-86.30002;Float;False;2;0;FLOAT4;0.0,0,0,0;False;1;FLOAT4;0.0,0,0,0;False;1;FLOAT4\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;8;-597.3999,355.6;Float;False;2;0;FLOAT;0.0;False;1;FLOAT;0.0;False;1;FLOAT\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;10;-296.7,-85.00003;Float;False;2;0;FLOAT4;0.0,0,0,0;False;1;FLOAT;0.0,0,0,0;False;1;FLOAT4\nNode;AmplifyShaderEditor.FunctionOutput;0;63.49997,37.09987;Float;False;True;Output
+    (Emission);0;1;0;FLOAT4;0.0;False;0\nWireConnection;2;0;14;0\nWireConnection;2;1;1;1\nWireConnection;7;0;6;4\nWireConnection;4;1;2;0\nWireConnection;9;0;3;0\nWireConnection;9;1;4;0\nWireConnection;8;0;12;0\nWireConnection;8;1;7;0\nWireConnection;10;0;9;0\nWireConnection;10;1;8;0\nWireConnection;0;0;10;0\nASEEND*/\n//CHKSM=851724C8C7CA556B155DC42AF86A84222619D0AE"
+  m_functionName: 
+  m_description: 

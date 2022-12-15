@@ -1,0 +1,10 @@
+Created by Cristian Pop 
+@BOXOPHOBIC - https://twitter.com/BOXOPHOBIC
+Website: https://boxophobic.com/
+
+Warning, lower resolution textures used. Get the full HD version here: https://goo.gl/LJKjLc
+
+You are free to modify and use any of the available shader examples in your own projects.
+
+Keep them coming, contribute today! 
+http://amplify.pt/unity/amplify-shader-editor/contribute

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: Waving Vertex
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor\n// Available at the Unity Asset
+    Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=14002\n487;595;979;423;1551.562;678.949;1.590643;True;False\nNode;AmplifyShaderEditor.FunctionInput;1;-1520,0;Float;False;Pos;3;0;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;12;-1232,144;Float;False;Freq;1;1;False;1;0;FLOAT;0.0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.BreakToComponentsNode;3;-1360,0;Float;False;FLOAT3;1;0;FLOAT3;0,0,0;False;16;FLOAT;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4;FLOAT;5;FLOAT;6;FLOAT;7;FLOAT;8;FLOAT;9;FLOAT;10;FLOAT;11;FLOAT;12;FLOAT;13;FLOAT;14;FLOAT;15\nNode;AmplifyShaderEditor.SimpleTimeNode;4;-1088,240;Float;False;1;0;FLOAT;2.0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;5;-1040,128;Float;False;2;2;0;FLOAT;0.0;False;1;FLOAT;0.0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;6;-864,128;Float;False;2;2;0;FLOAT;0.0;False;1;FLOAT;0.0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;13;-720,224;Float;False;Ampl;1;2;False;1;0;FLOAT;0.0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SinOpNode;7;-704,128;Float;False;1;0;FLOAT;0.0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;9;-528,128;Float;False;2;2;0;FLOAT;0.0;False;1;FLOAT;0.0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;10;-340.4415,27.53598;Float;False;2;2;0;FLOAT;0.0;False;1;FLOAT;0.0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.DynamicAppendNode;11;-160,0;Float;False;FLOAT3;4;0;FLOAT;0.0;False;1;FLOAT;0.0;False;2;FLOAT;0.0;False;3;FLOAT;0.0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionOutput;0;0,0;Float;False;True;Output;0;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nWireConnection;3;0;1;0\nWireConnection;5;0;3;0\nWireConnection;5;1;12;0\nWireConnection;6;0;5;0\nWireConnection;6;1;4;0\nWireConnection;7;0;6;0\nWireConnection;9;0;7;0\nWireConnection;9;1;13;0\nWireConnection;10;0;3;1\nWireConnection;10;1;9;0\nWireConnection;11;0;3;0\nWireConnection;11;1;10;0\nWireConnection;11;2;3;2\nWireConnection;0;0;11;0\nASEEND*/\n//CHKSM=58CCD68E2E8028C56D85BB481BE4FE776DEC1535"
+  m_functionName: 
+  m_description: Waving in local X direction
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_nodeCategory: 3
+  m_customNodeCategory: 

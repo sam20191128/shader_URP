@@ -1,0 +1,3 @@
+Created by Gil Damoiseaux @Gaxil - https://twitter.com/Gaxil
+You are free to modify and use any of the available shader examples in your own projects.
+Keep them coming, contribute today!
