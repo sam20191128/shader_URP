@@ -8,9 +8,11 @@ Shader "New Amplify Shader"
 		[HideInInspector] _EmissionColor("Emission Color", Color) = (1,1,1,1)
 		[ASEBegin]_Texture("Texture", 2D) = "white" {}
 		_FresnelColor("FresnelColor", Color) = (0,1,0.9177644,0)
-		_FresnelPower("FresnelPower", Float) = 5
+		_FresnelPower("Fresnel Power", Float) = 5
 		_Float0("Float 0", Float) = 0
-		[ASEEnd]_Float1("Float 0", Float) = 0.5
+		_Float1("Float 0", Float) = 0.5
+		_DirPower("Dir Power", Float) = 5
+		[ASEEnd]_Vector0("Vector 0", Vector) = (-1,0,0,0)
 		[HideInInspector] _texcoord( "", 2D ) = "white" {}
 
 
@@ -219,9 +221,7 @@ Shader "New Amplify Shader"
 				#define ENABLE_TERRAIN_PERPIXEL_NORMAL
 			#endif
 
-			#define ASE_NEEDS_FRAG_WORLD_TANGENT
 			#define ASE_NEEDS_FRAG_WORLD_NORMAL
-			#define ASE_NEEDS_FRAG_WORLD_BITANGENT
 			#define ASE_NEEDS_FRAG_WORLD_VIEW_DIR
 
 
@@ -258,8 +258,10 @@ Shader "New Amplify Shader"
 			CBUFFER_START(UnityPerMaterial)
 			float4 _Texture_ST;
 			float4 _FresnelColor;
+			float3 _Vector0;
 			float _Float0;
 			float _Float1;
+			float _DirPower;
 			float _FresnelPower;
 			#ifdef ASE_TRANSMISSION
 				float _TransmissionShadow;
@@ -509,14 +511,12 @@ Shader "New Amplify Shader"
 
 				float2 uv_Texture = IN.ase_texcoord7.xy * _Texture_ST.xy + _Texture_ST.zw;
 				
-				float3 tanToWorld0 = float3( WorldTangent.x, WorldBiTangent.x, WorldNormal.x );
-				float3 tanToWorld1 = float3( WorldTangent.y, WorldBiTangent.y, WorldNormal.y );
-				float3 tanToWorld2 = float3( WorldTangent.z, WorldBiTangent.z, WorldNormal.z );
-				float3 ase_tanViewDir =  tanToWorld0 * WorldViewDirection.x + tanToWorld1 * WorldViewDirection.y  + tanToWorld2 * WorldViewDirection.z;
-				ase_tanViewDir = normalize(ase_tanViewDir);
+				float3 normalizeResult57 = normalize( _Vector0 );
+				float3 normalizeResult60 = normalize( mul( float4( normalizeResult57 , 0.0 ), unity_WorldToCamera ).xyz );
+				float dotResult62 = dot( normalizeResult60 , WorldNormal );
 				float fresnelNdotV38 = dot( WorldNormal, WorldViewDirection );
 				float fresnelNode38 = ( 0.0 + 1.0 * pow( 1.0 - fresnelNdotV38, _FresnelPower ) );
-				float smoothstepResult53 = smoothstep( _Float0 , _Float1 , ( ase_tanViewDir.x * fresnelNode38 ));
+				float smoothstepResult53 = smoothstep( _Float0 , _Float1 , ( pow( dotResult62 , _DirPower ) * fresnelNode38 ));
 				
 
 				float3 BaseColor = tex2D( _Texture, uv_Texture ).rgb;
@@ -742,8 +742,10 @@ Shader "New Amplify Shader"
 			CBUFFER_START(UnityPerMaterial)
 			float4 _Texture_ST;
 			float4 _FresnelColor;
+			float3 _Vector0;
 			float _Float0;
 			float _Float1;
+			float _DirPower;
 			float _FresnelPower;
 			#ifdef ASE_TRANSMISSION
 				float _TransmissionShadow;
@@ -1050,8 +1052,10 @@ Shader "New Amplify Shader"
 			CBUFFER_START(UnityPerMaterial)
 			float4 _Texture_ST;
 			float4 _FresnelColor;
+			float3 _Vector0;
 			float _Float0;
 			float _Float1;
+			float _DirPower;
 			float _FresnelPower;
 			#ifdef ASE_TRANSMISSION
 				float _TransmissionShadow;
@@ -1306,7 +1310,6 @@ Shader "New Amplify Shader"
 				float4 texcoord1 : TEXCOORD1;
 				float4 texcoord2 : TEXCOORD2;
 				float4 ase_texcoord : TEXCOORD0;
-				float4 ase_tangent : TANGENT;
 				UNITY_VERTEX_INPUT_INSTANCE_ID
 			};
 
@@ -1321,8 +1324,6 @@ Shader "New Amplify Shader"
 				#endif
 				float4 ase_texcoord2 : TEXCOORD2;
 				float4 ase_texcoord3 : TEXCOORD3;
-				float4 ase_texcoord4 : TEXCOORD4;
-				float4 ase_texcoord5 : TEXCOORD5;
 				UNITY_VERTEX_INPUT_INSTANCE_ID
 				UNITY_VERTEX_OUTPUT_STEREO
 			};
@@ -1330,8 +1331,10 @@ Shader "New Amplify Shader"
 			CBUFFER_START(UnityPerMaterial)
 			float4 _Texture_ST;
 			float4 _FresnelColor;
+			float3 _Vector0;
 			float _Float0;
 			float _Float1;
+			float _DirPower;
 			float _FresnelPower;
 			#ifdef ASE_TRANSMISSION
 				float _TransmissionShadow;
@@ -1376,21 +1379,14 @@ Shader "New Amplify Shader"
 				UNITY_TRANSFER_INSTANCE_ID(v, o);
 				UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
 
-				float3 ase_worldTangent = TransformObjectToWorldDir(v.ase_tangent.xyz);
-				o.ase_texcoord3.xyz = ase_worldTangent;
 				float3 ase_worldNormal = TransformObjectToWorldNormal(v.ase_normal);
-				o.ase_texcoord4.xyz = ase_worldNormal;
-				float ase_vertexTangentSign = v.ase_tangent.w * ( unity_WorldTransformParams.w >= 0.0 ? 1.0 : -1.0 );
-				float3 ase_worldBitangent = cross( ase_worldNormal, ase_worldTangent ) * ase_vertexTangentSign;
-				o.ase_texcoord5.xyz = ase_worldBitangent;
+				o.ase_texcoord3.xyz = ase_worldNormal;
 				
 				o.ase_texcoord2.xy = v.ase_texcoord.xy;
 				
 				//setting value to unused interpolator channels and avoid initialization warnings
 				o.ase_texcoord2.zw = 0;
 				o.ase_texcoord3.w = 0;
-				o.ase_texcoord4.w = 0;
-				o.ase_texcoord5.w = 0;
 
 				#ifdef ASE_ABSOLUTE_VERTEX_POS
 					float3 defaultVertexValue = v.vertex.xyz;
@@ -1434,7 +1430,6 @@ Shader "New Amplify Shader"
 				float4 texcoord1 : TEXCOORD1;
 				float4 texcoord2 : TEXCOORD2;
 				float4 ase_texcoord : TEXCOORD0;
-				float4 ase_tangent : TANGENT;
 
 				UNITY_VERTEX_INPUT_INSTANCE_ID
 			};
@@ -1455,7 +1450,6 @@ Shader "New Amplify Shader"
 				o.texcoord1 = v.texcoord1;
 				o.texcoord2 = v.texcoord2;
 				o.ase_texcoord = v.ase_texcoord;
-				o.ase_tangent = v.ase_tangent;
 				return o;
 			}
 
@@ -1497,7 +1491,6 @@ Shader "New Amplify Shader"
 				o.texcoord1 = patch[0].texcoord1 * bary.x + patch[1].texcoord1 * bary.y + patch[2].texcoord1 * bary.z;
 				o.texcoord2 = patch[0].texcoord2 * bary.x + patch[1].texcoord2 * bary.y + patch[2].texcoord2 * bary.z;
 				o.ase_texcoord = patch[0].ase_texcoord * bary.x + patch[1].ase_texcoord * bary.y + patch[2].ase_texcoord * bary.z;
-				o.ase_tangent = patch[0].ase_tangent * bary.x + patch[1].ase_tangent * bary.y + patch[2].ase_tangent * bary.z;
 				#if defined(ASE_PHONG_TESSELLATION)
 				float3 pp[3];
 				for (int i = 0; i < 3; ++i)
@@ -1536,19 +1529,15 @@ Shader "New Amplify Shader"
 
 				float2 uv_Texture = IN.ase_texcoord2.xy * _Texture_ST.xy + _Texture_ST.zw;
 				
-				float3 ase_worldTangent = IN.ase_texcoord3.xyz;
-				float3 ase_worldNormal = IN.ase_texcoord4.xyz;
-				float3 ase_worldBitangent = IN.ase_texcoord5.xyz;
-				float3 tanToWorld0 = float3( ase_worldTangent.x, ase_worldBitangent.x, ase_worldNormal.x );
-				float3 tanToWorld1 = float3( ase_worldTangent.y, ase_worldBitangent.y, ase_worldNormal.y );
-				float3 tanToWorld2 = float3( ase_worldTangent.z, ase_worldBitangent.z, ase_worldNormal.z );
+				float3 normalizeResult57 = normalize( _Vector0 );
+				float3 normalizeResult60 = normalize( mul( float4( normalizeResult57 , 0.0 ), unity_WorldToCamera ).xyz );
+				float3 ase_worldNormal = IN.ase_texcoord3.xyz;
+				float dotResult62 = dot( normalizeResult60 , ase_worldNormal );
 				float3 ase_worldViewDir = ( _WorldSpaceCameraPos.xyz - WorldPosition );
 				ase_worldViewDir = normalize(ase_worldViewDir);
-				float3 ase_tanViewDir =  tanToWorld0 * ase_worldViewDir.x + tanToWorld1 * ase_worldViewDir.y  + tanToWorld2 * ase_worldViewDir.z;
-				ase_tanViewDir = normalize(ase_tanViewDir);
 				float fresnelNdotV38 = dot( ase_worldNormal, ase_worldViewDir );
 				float fresnelNode38 = ( 0.0 + 1.0 * pow( 1.0 - fresnelNdotV38, _FresnelPower ) );
-				float smoothstepResult53 = smoothstep( _Float0 , _Float1 , ( ase_tanViewDir.x * fresnelNode38 ));
+				float smoothstepResult53 = smoothstep( _Float0 , _Float1 , ( pow( dotResult62 , _DirPower ) * fresnelNode38 ));
 				
 
 				float3 BaseColor = tex2D( _Texture, uv_Texture ).rgb;
@@ -1630,8 +1619,10 @@ Shader "New Amplify Shader"
 			CBUFFER_START(UnityPerMaterial)
 			float4 _Texture_ST;
 			float4 _FresnelColor;
+			float3 _Vector0;
 			float _Float0;
 			float _Float1;
+			float _DirPower;
 			float _FresnelPower;
 			#ifdef ASE_TRANSMISSION
 				float _TransmissionShadow;
@@ -1894,8 +1885,10 @@ Shader "New Amplify Shader"
 			CBUFFER_START(UnityPerMaterial)
 			float4 _Texture_ST;
 			float4 _FresnelColor;
+			float3 _Vector0;
 			float _Float0;
 			float _Float1;
+			float _DirPower;
 			float _FresnelPower;
 			#ifdef ASE_TRANSMISSION
 				float _TransmissionShadow;
@@ -2175,9 +2168,7 @@ Shader "New Amplify Shader"
 				#define ENABLE_TERRAIN_PERPIXEL_NORMAL
 			#endif
 
-			#define ASE_NEEDS_FRAG_WORLD_TANGENT
 			#define ASE_NEEDS_FRAG_WORLD_NORMAL
-			#define ASE_NEEDS_FRAG_WORLD_BITANGENT
 			#define ASE_NEEDS_FRAG_WORLD_VIEW_DIR
 
 
@@ -2214,8 +2205,10 @@ Shader "New Amplify Shader"
 			CBUFFER_START(UnityPerMaterial)
 			float4 _Texture_ST;
 			float4 _FresnelColor;
+			float3 _Vector0;
 			float _Float0;
 			float _Float1;
+			float _DirPower;
 			float _FresnelPower;
 			#ifdef ASE_TRANSMISSION
 				float _TransmissionShadow;
@@ -2467,14 +2460,12 @@ Shader "New Amplify Shader"
 
 				float2 uv_Texture = IN.ase_texcoord7.xy * _Texture_ST.xy + _Texture_ST.zw;
 				
-				float3 tanToWorld0 = float3( WorldTangent.x, WorldBiTangent.x, WorldNormal.x );
-				float3 tanToWorld1 = float3( WorldTangent.y, WorldBiTangent.y, WorldNormal.y );
-				float3 tanToWorld2 = float3( WorldTangent.z, WorldBiTangent.z, WorldNormal.z );
-				float3 ase_tanViewDir =  tanToWorld0 * WorldViewDirection.x + tanToWorld1 * WorldViewDirection.y  + tanToWorld2 * WorldViewDirection.z;
-				ase_tanViewDir = normalize(ase_tanViewDir);
+				float3 normalizeResult57 = normalize( _Vector0 );
+				float3 normalizeResult60 = normalize( mul( float4( normalizeResult57 , 0.0 ), unity_WorldToCamera ).xyz );
+				float dotResult62 = dot( normalizeResult60 , WorldNormal );
 				float fresnelNdotV38 = dot( WorldNormal, WorldViewDirection );
 				float fresnelNode38 = ( 0.0 + 1.0 * pow( 1.0 - fresnelNdotV38, _FresnelPower ) );
-				float smoothstepResult53 = smoothstep( _Float0 , _Float1 , ( ase_tanViewDir.x * fresnelNode38 ));
+				float smoothstepResult53 = smoothstep( _Float0 , _Float1 , ( pow( dotResult62 , _DirPower ) * fresnelNode38 ));
 				
 
 				float3 BaseColor = tex2D( _Texture, uv_Texture ).rgb;
@@ -2586,11 +2577,21 @@ Node;AmplifyShaderEditor.ColorNode;39;-706.1527,538.5785;Inherit;False;Property;
 Node;AmplifyShaderEditor.RangedFloatNode;44;-1213.97,507.2073;Inherit;False;Property;_Float0;Float 0;3;0;Create;True;0;0;0;False;0;False;0;0;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.SmoothstepOpNode;53;-962.4139,241.5587;Inherit;True;3;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;1;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SaturateNode;55;-673.7823,247.2493;Inherit;True;1;0;FLOAT;0;False;1;FLOAT;0
-Node;AmplifyShaderEditor.ViewDirInputsCoordNode;50;-1712.046,215.1458;Inherit;False;Tangent;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
 Node;AmplifyShaderEditor.FresnelNode;38;-1826.99,448.6292;Inherit;True;Standard;WorldNormal;ViewDir;False;False;5;0;FLOAT3;0,0,1;False;4;FLOAT3;0,0,0;False;1;FLOAT;0;False;2;FLOAT;1;False;3;FLOAT;5;False;1;FLOAT;0
-Node;AmplifyShaderEditor.RangedFloatNode;41;-2109.165,591.8636;Inherit;False;Property;_FresnelPower;FresnelPower;2;0;Create;True;0;0;0;False;0;False;5;5;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;51;-1439.694,243.7542;Inherit;True;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.RangedFloatNode;54;-1219.696,610.0594;Inherit;False;Property;_Float1;Float 0;4;0;Create;True;0;0;0;False;0;False;0.5;0.5;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.ViewDirInputsCoordNode;50;-2094.046,404.1458;Inherit;False;World;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
+Node;AmplifyShaderEditor.SimpleMultiplyOpNode;59;-2607.819,-47.98507;Inherit;True;2;2;0;FLOAT3;0,0,0;False;1;FLOAT4x4;0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1;False;1;FLOAT3;0
+Node;AmplifyShaderEditor.NormalizeNode;57;-2834.819,-35.98508;Inherit;False;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0
+Node;AmplifyShaderEditor.NormalizeNode;60;-2361.408,-48.03586;Inherit;False;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0
+Node;AmplifyShaderEditor.WorldNormalVector;61;-2380.408,79.96412;Inherit;False;False;1;0;FLOAT3;0,0,1;False;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
+Node;AmplifyShaderEditor.DotProductOpNode;62;-2124.41,-52.03586;Inherit;True;2;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT;0
+Node;AmplifyShaderEditor.PowerNode;63;-1790.468,-47.90793;Inherit;True;False;2;0;FLOAT;0;False;1;FLOAT;1;False;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;41;-2109.165,587.8636;Inherit;False;Property;_FresnelPower;Fresnel Power;2;0;Create;True;0;0;0;False;0;False;5;5;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;64;-2081.468,218.0921;Inherit;False;Property;_DirPower;Dir Power;5;0;Create;True;0;0;0;False;0;False;5;5;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.Vector3Node;56;-3044.867,-31.24328;Inherit;False;Property;_Vector0;Vector 0;6;0;Create;True;0;0;0;False;0;False;-1,0,0;-1,0,0;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
+Node;AmplifyShaderEditor.CameraToWorldMatrix;58;-2852.819,73.01489;Inherit;False;0;1;FLOAT4x4;0
+Node;AmplifyShaderEditor.WorldToCameraMatrix;65;-2863.468,200.0921;Inherit;False;0;1;FLOAT4x4;0
 WireConnection;31;0;8;0
 WireConnection;31;2;40;0
 WireConnection;40;0;55;0
@@ -2599,8 +2600,17 @@ WireConnection;53;0;51;0
 WireConnection;53;1;44;0
 WireConnection;53;2;54;0
 WireConnection;55;0;53;0
+WireConnection;38;4;50;0
 WireConnection;38;3;41;0
-WireConnection;51;0;50;1
+WireConnection;51;0;63;0
 WireConnection;51;1;38;0
+WireConnection;59;0;57;0
+WireConnection;59;1;65;0
+WireConnection;57;0;56;0
+WireConnection;60;0;59;0
+WireConnection;62;0;60;0
+WireConnection;62;1;61;0
+WireConnection;63;0;62;0
+WireConnection;63;1;64;0
 ASEEND*/
-//CHKSM=816AD8983DA4481ADB84D05C8C7C5AC7476B851A
+//CHKSM=3FBF27D2CF9C2D96B26CCFC1AB7B0E1A6DB75AC2

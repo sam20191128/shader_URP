@@ -29,6 +29,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _AlphaCutoff: 0.5
+    - _DirPower: 1.14
     - _EnvironmentReflections: 1
     - _Float0: 0
     - _Float1: 0.5
@@ -38,4 +39,5 @@ Material:
     m_Colors:
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _FresnelColor: {r: 0, g: 1, b: 0.9177644, a: 0}
+    - _Vector0: {r: -1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
