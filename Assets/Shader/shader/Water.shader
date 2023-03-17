@@ -236,12 +236,13 @@ Shader "URP/Water" //Shader路径名
                 float depthDifference = depth - i.scrPos.w; // 不同深度值
                 //将颜色值规范到0~1之间时，saturate函数saturate(x)的作用是如果x取值小于0，则返回值为0。如果x取值大于1，则返回值为1。若x在0到1之间，则直接返回x的值.
                 float waterDepthDifference01 = saturate(depthDifference / _DepthMaxDistance); //规范到0~1之间，不同深度值/深度最大距离=深度百分比
-                float4 waterColor = lerp(_DepthGradientShallow, _DepthGradientDeep, waterDepthDifference01); // lerp(深度渐变浅, 深度渐变深, 深度百分比)
+                float4 waterColor = lerp(_DepthGradientDeep, _DepthGradientShallow, 1 - waterDepthDifference01); // lerp(深度渐变浅, 深度渐变深, 深度百分比)
+
 
                 //泡沫
                 float waterDepthDifference02 = saturate(depthDifference / _FoamAmount); //规范到0~1之间，不同深度值/深度最大距离=深度百分比
                 float foamAlpha = mul(step(waterDepthDifference02, var_FoamNoiseTex), _FoamCol.a);
-                float4 waterColor2 = lerp(waterColor, _FoamCol, foamAlpha); // lerp(深度渐变浅, 泡沫颜色, 泡沫alpha)
+                float4 waterColor2 = lerp(_FoamCol, waterColor, 1 - foamAlpha); // lerp(深度渐变浅, 泡沫颜色, 泡沫alpha)
 
                 // 光照模型(自发光部分)
                 //float3 emission = waterColor * _EmitCol * _EmitInt * (sin(_Time.z) * 0.5 + 0.5); //动态发光版

@@ -10,7 +10,7 @@ Material:
   m_Name: "\u523B\u6674\u53D1"
   m_Shader: {fileID: 4800000, guid: d82f279c17215ba4ab87321e8fcfb470, type: 3}
   m_ValidKeywords:
-  - _SHADERENUM_BASE
+  - _SHADERENUM_HAIR
   m_InvalidKeywords:
   - ENABLE_Flip_UV
   - ENABLE_RAMP_SHADOW
@@ -93,7 +93,7 @@ Material:
     - _Shininess: 5.4
     - _SpecMulti: 0.207
     - _WorldLightInfluence: 0.282
-    - _outlinewidth: 0.03
+    - _outlinewidth: 0.01
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _DarkShadowMultColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
